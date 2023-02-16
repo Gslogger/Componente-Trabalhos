@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --ff-heading: 'Epilogue', sans-serif;
   --ff-texting: 'Open sans', sans-serif;
@@ -22,6 +28,7 @@ body {
 }
 
 header {
+  margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
 
   text-align: center;
@@ -43,4 +50,5 @@ header h1 {
   font-weight: 800;
   font-size: var(--fs-heading);
   line-height: 4.8rem;
+  
 }
