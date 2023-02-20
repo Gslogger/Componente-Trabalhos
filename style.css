@@ -15,7 +15,7 @@
   --fc-secondary-dark: hsl(var(--hue), 100%, 11%, 10);
 
   font-size: 62.5%;
-  --fs-body: 1.6rem; 
+  --fs-body: 1.6rem;
   --fs-heading: 4rem;
 }
 
@@ -24,25 +24,43 @@ body {
 
   background-color: var(--bg-primary);
   color: var(--fc-primary);
-  
-  font-size:var(--fs-body);
+
+  font-size: var(--fs-body);
 }
 
-  .page {
-    max-width: 33rem;
-    margin: 0 auto;
-  }
+.page {
+  max-width: 33rem;
+  margin: 0 auto;
+}
 
-  img {
-    width: 100%;
-    height: auto;
+@media (min-width: 700px) {
+  :root {
+    --fs-heading: 5.6rem;
+
   }
+  
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+}
+
+main {
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
 
 header {
   margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
 
   text-align: center;
+  animation: topdown 700ms;
+
 }
 
 header p {
@@ -61,12 +79,16 @@ header h1 {
   font-weight: 800;
   font-size: var(--fs-heading);
   line-height: 4.8rem;
-  
+
 }
 
 main {
   display: grid;
   gap: 3.2rem;
+
+  padding-bottom: 10rem;
+  animation: downtop 700ms 350ms backwards;
+
 }
 
 .card {
@@ -94,11 +116,12 @@ main {
   bottom: 5.2rem;
   left: 2.8rem;
 
-  font-size: var(--fs-heading);
+  font-size: 4rem;
   font-weight: 800;
+  
   display: flex;
   flex-direction: column;
-  gap: 2.8rem;  
+  gap: 2.8rem;
 }
 
 .card h2 span {
@@ -108,7 +131,7 @@ main {
   font-weight: 400;
   color: var(--fc-secondary-dark);
   padding: 0 1.6rem;
-  
+
   width: fit-content;
   height: 3.8rem;
 
@@ -117,20 +140,13 @@ main {
 
 }
 
-header {
-  animation: topdown 700ms;
-}
-
-main {
-  animation: downtop 700ms 350ms backwards;
-}
 
 @keyframes topdown {
   0% {
     opacity: 0;
     transform: translateY(-15px);
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -148,6 +164,3 @@ main {
     transform: translateY(0);
   }
 }
-
-  
-  
