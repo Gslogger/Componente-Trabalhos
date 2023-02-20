@@ -38,16 +38,14 @@ body {
     --fs-heading: 5.6rem;
 
   }
-  
+
   .page {
     max-width: 117rem;
     padding: 0 5rem;
   }
 }
 
-main {
-  
-}
+main {}
 
 img {
   width: 100%;
@@ -118,7 +116,7 @@ main {
 
   font-size: 4rem;
   font-weight: 800;
-  
+
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
