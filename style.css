@@ -100,19 +100,19 @@ main {
 
 .card h2 {
   position: absolute;
-  bottom: 5.2rem;
-  left: 2.8rem;
+  bottom: 3.2rem;
+  left: 1.8rem;
 
   font-size: var(--fs-heading-sm);
-  font-weight: 800;
+  font-weight: normal;
 
   display: flex;
   flex-direction: column;
-  gap: 2.8rem;
+  gap: 1.3rem;
 }
 
 .card h2 span {
-  border-radius: 2rem;
+  border-radius: 1.8rem;
   background-color: var(--fc-primary);
   font-size: var(--fs-body);
   font-weight: 400;
